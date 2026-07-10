@@ -1,11 +1,95 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тарасов — Портфолио</title>
+  <meta name="description" content="Портфолио системного руководителя ИТ-проектов: опыт, компетенции, достижения и контакты." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>Testing my first website on Github</p>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Профессиональный профиль</p>
+      <h1>Тарасов — системный руководитель ИТ‑проектов</h1>
+      <p class="lead">Управление полным циклом проектов: требования, roadmap, бюджет, риски — от инициации до запуска и развития решений.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#experience">Опыт</a>
+        <a class="btn btn-secondary" href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container grid-two">
+        <div>
+          <h2>Обо мне</h2>
+          <p>Кросс-функционально координирую бизнес, ИТ, архитектуру, аналитику, поддержку и подрядчиков как единую команду результата.</p>
+          <p>Есть опыт в ERP, SAP, mobile-продуктах, BI и стратегических программах цифровизации холдинга.</p>
+        </div>
+        <div class="card">
+          <h3>Ключевой фокус</h3>
+          <ul>
+            <li>Управление программами и проектами</li>
+            <li>Взаимодействие бизнеса и ИТ</li>
+            <li>Roadmap, сроки, бюджет и риски</li>
+            <li>Запуск и развитие цифровых решений</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2>Сильные стороны</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Полный цикл</h3>
+            <p>От инициации и сбора требований до внедрения, сопровождения и развития продукта.</p>
+          </article>
+          <article class="card">
+            <h3>Enterprise-масштаб</h3>
+            <p>Опыт работы с крупными системами, интеграциями, корпоративными процессами и большим числом стейкхолдеров.</p>
+          </article>
+          <article class="card">
+            <h3>Командная координация</h3>
+            <p>Выстраивание взаимодействия между заказчиками, разработкой, аналитикой, архитектурой и внешними подрядчиками.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Направления экспертизы</h2>
+        <div class="tags">
+          <span>ERP</span>
+          <span>SAP</span>
+          <span>Mobile</span>
+          <span>BI</span>
+          <span>Digital transformation</span>
+          <span>IT management</span>
+          <span>Business analysis</span>
+          <span>Enterprise systems</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+      
+        <div class="contact-box">
+          <a href="mailto:your@email.com">aleksandrtarasov@gmail.com</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">@alexandertrsv</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
+  <script src="script.js"></script>
 </body>
 </html>
