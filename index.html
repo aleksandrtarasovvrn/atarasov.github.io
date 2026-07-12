@@ -1,95 +1,269 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Тарасов — Портфолио</title>
-  <meta name="description" content="Портфолио системного руководителя ИТ-проектов: опыт, компетенции, достижения и контакты." />
-  <link rel="stylesheet" href="style.css" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="slides-format" content="viewport">
+<title>Александр Тарасов — Портфолио ключевых проектов</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+
+<style type="text/tailwindcss">
+@theme {
+  --color-bg: #f7f6f3;
+  --color-bg-deep: #0c1b2e;
+  --color-surface: #ffffff;
+  --color-text: #0c1b2e;
+  --color-text-secondary: #3a4a5e;
+  --color-text-muted: #748094;
+  --color-accent-1: #0c2d52;
+  --color-accent-2: #b08d36;
+  --color-accent-3: #6f7e8c;
+  --color-glass-bg: rgba(12,29,46,0.04);
+  --color-glass-border: rgba(12,29,46,0.10);
+  --color-vignette: rgba(0,0,0,0.05);
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+}
+
+</style>
+<link rel="stylesheet" href="style.css">
+
+
+
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <p class="eyebrow">Профессиональный профиль</p>
-      <h1>Тарасов — системный руководитель ИТ‑проектов</h1>
-      <p class="lead">Управление полным циклом проектов: требования, roadmap, бюджет, риски — от инициации до запуска и развития решений.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#experience">Опыт</a>
-        <a class="btn btn-secondary" href="#contacts">Контакты</a>
+
+<div class="mouse-spotlight" style="position:fixed;inset:0;z-index:99;pointer-events:none;"></div>
+
+<div class="deck">
+
+<!-- SLIDE 1: TITLE -->
+<div class="slide slide-1 active" data-slide="1" style="background:linear-gradient(160deg,#0c1b2e 0%,#0c2d52 60%,#13345e 100%);">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:480px;height:480px;top:-120px;right:-100px;background:#b08d36;opacity:.18;"></div>
+    <div class="blob" style="width:340px;height:340px;bottom:-100px;left:-80px;background:#6f93c4;opacity:.14;"></div>
+    <div class="blob" style="width:220px;height:220px;top:38%;left:8%;background:#b08d36;opacity:.10;"></div>
+  </div>
+  <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1;"></canvas>
+  <div class="content text-center">
+    <p class="reveal text-[clamp(0.78rem,1.2vw,0.95rem)] tracking-[6px] uppercase text-[#cdd8e6] mb-5">Портфолио ключевых проектов</p>
+    <h1 class="reveal font-display text-[clamp(2.6rem,6vw,5rem)] font-bold text-[#f7f6f3] tracking-tight mb-4">Александр Тарасов</h1>
+    <p class="reveal text-[clamp(1rem,1.8vw,1.35rem)] font-light text-[#b08d36] tracking-[2px] mb-8">Руководитель ИТ‑проектов&nbsp;/&nbsp;IT Project Manager</p>
+    <div class="reveal flex gap-10 justify-center text-[#dbe3ee]">
+      <div class="text-center"><div class="text-2xl font-bold text-glow" style="color:#b08d36;">7+</div><div class="text-xs uppercase tracking-wider text-[#9fb0c4]">лет в IT-проектах</div></div>
+      <div class="text-center"><div class="text-2xl font-bold" style="color:#b08d36;">70+</div><div class="text-xs uppercase tracking-wider text-[#9fb0c4]">проектов в портфеле</div></div>
+      <div class="text-center"><div class="text-2xl font-bold" style="color:#b08d36;">600+</div><div class="text-xs uppercase tracking-wider text-[#9fb0c4]">пользователей продуктов</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 2: PROFILE -->
+<div class="slide slide-2" data-slide="2">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:320px;height:320px;top:-70px;right:-70px;background:var(--color-accent-1);opacity:.06;"></div>
+    <div class="blob" style="width:240px;height:240px;bottom:-50px;left:-30px;background:var(--color-accent-2);opacity:.07;"></div>
+  </div>
+  <div class="content">
+    <p class="reveal text-xs uppercase tracking-[0.18em] text-accent-2 font-semibold mb-2">Профессиональный профиль</p>
+    <h2 class="reveal font-display text-[clamp(2rem,4vw,2.7rem)] font-bold text-text mb-8">Системный руководитель ИТ‑проектов</h2>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="kpi-card reveal hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-3xl mb-2">🎯</div>
+        <h4 class="font-display text-lg font-bold mb-2">Управление полным циклом</h4>
+        <p class="text-sm text-text-secondary">Требования, roadmap, бюджет, риски — от инициации до запуска и развития решений.</p>
+      </div>
+      <div class="kpi-card reveal hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-3xl mb-2">🤝</div>
+        <h4 class="font-display text-lg font-bold mb-2">Кросс-функциональная координация</h4>
+        <p class="text-sm text-text-secondary">Бизнес, ИТ, архитектура, аналитика, поддержка и подрядчики — единая команда результата.</p>
+      </div>
+      <div class="kpi-card reveal hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-3xl mb-2">📊</div>
+        <h4 class="font-display text-lg font-bold mb-2">Enterprise-масштаб</h4>
+        <p class="text-sm text-text-secondary">Опыт в ERP, SAP, mobile-продуктах, BI и стратегических программах цифровизации холдинга.</p>
       </div>
     </div>
-  </header>
+  </div>
+</div>
 
-  <main>
-    <section class="section" id="about">
-      <div class="container grid-two">
+<!-- SLIDE 3: STRATEGY CASE -->
+<div class="slide slide-3" data-slide="3">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:340px;height:340px;top:-80px;left:-60px;background:var(--color-accent-1);opacity:.06;"></div>
+    <div class="blob" style="width:260px;height:260px;bottom:-60px;right:-40px;background:var(--color-accent-2);opacity:.07;"></div>
+  </div>
+  <div class="content">
+    <p class="reveal text-xs uppercase tracking-[0.18em] text-accent-2 font-semibold mb-2">Кейс 01 — Энтех ОМ / АПХ «Зелёная Долина»</p>
+    <h2 class="reveal font-display text-[clamp(1.9rem,3.6vw,2.5rem)] font-bold text-text mb-6">Стратегия цифровизации холдинга до 2032 года</h2>
+    <div class="grid grid-cols-2 gap-10 items-center">
+      <div>
+        <ul class="space-y-3 text-text-secondary text-[0.98rem]">
+          <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Координация стратегии цифровизации и команды проекта из 20 человек.</li>
+          <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Аудит ИТ‑ландшафта, контура данных, отчётности и BI‑инструментов.</li>
+          <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Формирование дорожной карты, зависимостей и материалов для совета руководства.</li>
+        </ul>
+        <div class="reveal mt-6 flex gap-8">
+          <div><div class="text-2xl font-bold text-accent-1">70+</div><div class="text-xs text-text-muted uppercase">проектов в портфеле</div></div>
+          <div><div class="text-2xl font-bold text-accent-1">5</div><div class="text-xs text-text-muted uppercase">проектов лично проработано</div></div>
+        </div>
+      </div>
+      <div class="reveal kpi-card">
+        <p class="text-xs uppercase tracking-wider text-text-muted mb-3">Портфель инициатив по направлениям</p>
+        <div class="space-y-3">
+          <div class="bar-row"><span class="text-xs w-28 text-text-secondary">Данные / BI</span><div class="bar-track"><div class="bar-fill" data-w="85" style="width:0%"></div></div><span class="text-xs text-text-muted">17</span></div>
+          <div class="bar-row"><span class="text-xs w-28 text-text-secondary">ERP / Финансы</span><div class="bar-track"><div class="bar-fill" data-w="70" style="width:0%"></div></div><span class="text-xs text-text-muted">14</span></div>
+          <div class="bar-row"><span class="text-xs w-28 text-text-secondary">Производство / IoT</span><div class="bar-track"><div class="bar-fill" data-w="95" style="width:0%"></div></div><span class="text-xs text-text-muted">19</span></div>
+          <div class="bar-row"><span class="text-xs w-28 text-text-secondary">AI / Цифр. двойники</span><div class="bar-track"><div class="bar-fill" data-w="55" style="width:0%"></div></div><span class="text-xs text-text-muted">11</span></div>
+          <div class="bar-row"><span class="text-xs w-28 text-text-secondary">Инфраструктура / ИБ</span><div class="bar-track"><div class="bar-fill" data-w="45" style="width:0%"></div></div><span class="text-xs text-text-muted">9</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: MOBILE CASE -->
+<div class="slide slide-4" data-slide="4">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:320px;height:320px;top:-70px;right:-60px;background:var(--color-accent-2);opacity:.07;"></div>
+    <div class="blob" style="width:240px;height:240px;bottom:-60px;left:-40px;background:var(--color-accent-1);opacity:.06;"></div>
+  </div>
+  <div class="content">
+    <p class="reveal text-xs uppercase tracking-[0.18em] text-accent-2 font-semibold mb-2">Кейс 02 — АгрИТ / ГК «АГРОИНВЕСТ»</p>
+    <h2 class="reveal font-display text-[clamp(1.9rem,3.6vw,2.5rem)] font-bold text-text mb-6">Линейка мобильных продуктов для сотрудников «в полях»</h2>
+    <div class="grid grid-cols-4 gap-5 mb-7">
+      <div class="kpi-card reveal text-center hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-2xl font-bold text-accent-1">5</div><div class="text-xs text-text-muted uppercase mt-1">приложений запущено</div>
+      </div>
+      <div class="kpi-card reveal text-center hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-2xl font-bold text-accent-1">12</div><div class="text-xs text-text-muted uppercase mt-1">обществ ЦФО</div>
+      </div>
+      <div class="kpi-card reveal text-center hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-2xl font-bold text-accent-1">600+</div><div class="text-xs text-text-muted uppercase mt-1">пользователей</div>
+      </div>
+      <div class="kpi-card reveal text-center hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="text-2xl font-bold text-accent-1">20+</div><div class="text-xs text-text-muted uppercase mt-1">проектов завершено</div>
+      </div>
+    </div>
+    <ul class="grid grid-cols-2 gap-3 text-text-secondary text-[0.95rem]">
+      <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Управление полным lifecycle продуктов: backlog, roadmap, запуск, развитие.</li>
+      <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Организация 1‑й линии поддержки и метрик использования после запуска.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- SLIDE 5: SAP / DATA CASE -->
+<div class="slide slide-5" data-slide="5">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:300px;height:300px;top:-60px;left:-60px;background:var(--color-accent-1);opacity:.06;"></div>
+    <div class="blob" style="width:260px;height:260px;bottom:-70px;right:-50px;background:var(--color-accent-2);opacity:.07;"></div>
+  </div>
+  <div class="content">
+    <p class="reveal text-xs uppercase tracking-[0.18em] text-accent-2 font-semibold mb-2">Кейс 03 — ГК «АГРОИНВЕСТ»</p>
+    <h2 class="reveal font-display text-[clamp(1.9rem,3.6vw,2.5rem)] font-bold text-text mb-6">SAP, интеграции и контур данных</h2>
+    <div class="grid grid-cols-2 gap-10 items-center">
+      <div class="flex items-center gap-8 reveal">
+        <svg width="150" height="150" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(12,45,82,0.08)" stroke-width="10"/>
+          <circle class="donut-ring" data-percent="75" cx="50" cy="50" r="40" fill="none" stroke="var(--color-accent-1)" stroke-width="10" transform="rotate(-90 50 50)"/>
+          <text x="50" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#0c1b2e">×4</text>
+        </svg>
         <div>
-          <h2>Обо мне</h2>
-          <p>Кросс-функционально координирую бизнес, ИТ, архитектуру, аналитику, поддержку и подрядчиков как единую команду результата.</p>
-          <p>Есть опыт в ERP, SAP, mobile-продуктах, BI и стратегических программах цифровизации холдинга.</p>
-        </div>
-        <div class="card">
-          <h3>Ключевой фокус</h3>
-          <ul>
-            <li>Управление программами и проектами</li>
-            <li>Взаимодействие бизнеса и ИТ</li>
-            <li>Roadmap, сроки, бюджет и риски</li>
-            <li>Запуск и развитие цифровых решений</li>
-          </ul>
+          <div class="text-sm text-text-muted uppercase mb-1">Ускорение расчётов</div>
+          <div class="text-text-secondary text-sm">с акционерами: с 1 месяца до 1 недели</div>
         </div>
       </div>
-    </section>
+      <ul class="space-y-3 text-text-secondary text-[0.98rem]">
+        <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Ведение проектов развития SAP‑контуров (RE‑FX, FI‑AA): требования → ТЗ → UAT → обучение.</li>
+        <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Интеграция SAP с ArcGIS — единый реестр земельных активов холдинга.</li>
+        <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Выгрузка документов для ЭДО — экономия ~700 тыс. руб. в год.</li>
+        <li class="reveal flex gap-2"><span class="text-accent-2">—</span>Анализ data lineage и BI‑отчётности для управленческих решений.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-    <section class="section section-alt" id="experience">
-      <div class="container">
-        <h2>Сильные стороны</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Полный цикл</h3>
-            <p>От инициации и сбора требований до внедрения, сопровождения и развития продукта.</p>
-          </article>
-          <article class="card">
-            <h3>Enterprise-масштаб</h3>
-            <p>Опыт работы с крупными системами, интеграциями, корпоративными процессами и большим числом стейкхолдеров.</p>
-          </article>
-          <article class="card">
-            <h3>Командная координация</h3>
-            <p>Выстраивание взаимодействия между заказчиками, разработкой, аналитикой, архитектурой и внешними подрядчиками.</p>
-          </article>
-        </div>
+
+<!-- SLIDE 6: CAREER TIMELINE -->
+<div class="slide slide-6" data-slide="6">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:300px;height:300px;top:-70px;right:-50px;background:var(--color-accent-1);opacity:.06;"></div>
+    <div class="blob" style="width:240px;height:240px;bottom:-60px;left:-40px;background:var(--color-accent-2);opacity:.07;"></div>
+  </div>
+  <div class="content">
+    <p class="reveal text-xs uppercase tracking-[0.18em] text-accent-2 font-semibold mb-2">Карьерная траектория</p>
+    <h2 class="reveal font-display text-[clamp(1.9rem,3.6vw,2.5rem)] font-bold text-text mb-10">От SAP-консультанта до руководителя стратегии холдинга</h2>
+    <div style="position:relative;padding-left:28px;">
+      <div style="position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--color-accent-2),var(--color-accent-1));"></div>
+
+      <div class="reveal" style="position:relative;margin-bottom:2rem;">
+        <div style="position:absolute;left:-28px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--color-accent-2);box-shadow:0 0 0 4px rgba(176,141,54,0.15);"></div>
+        <div class="text-xs text-text-muted uppercase mb-1">2019 — 2023 · ГК «АГРОИНВЕСТ»</div>
+        <div class="font-display text-lg font-bold text-text mb-1">Консультант SAP</div>
+        <p class="text-sm text-text-secondary">Развитие SAP-контуров, интеграция с ArcGIS, автоматизация ЭДО.</p>
       </div>
-    </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <h2>Направления экспертизы</h2>
-        <div class="tags">
-          <span>ERP</span>
-          <span>SAP</span>
-          <span>Mobile</span>
-          <span>BI</span>
-          <span>Digital transformation</span>
-          <span>IT management</span>
-          <span>Business analysis</span>
-          <span>Enterprise systems</span>
-        </div>
+      <div class="reveal" style="position:relative;margin-bottom:2rem;">
+        <div style="position:absolute;left:-28px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--color-accent-2);box-shadow:0 0 0 4px rgba(176,141,54,0.15);"></div>
+        <div class="text-xs text-text-muted uppercase mb-1">2024 — 2025 · АгрИТ / ГК «АГРОИНВЕСТ»</div>
+        <div class="font-display text-lg font-bold text-text mb-1">Руководитель проектов</div>
+        <p class="text-sm text-text-secondary">Запуск 5 мобильных продуктов, управление портфелем из 20+ проектов.</p>
       </div>
-    </section>
 
-    <section class="section section-alt" id="contacts">
-      <div class="container">
-        <h2>Контакты</h2>
-      
-        <div class="contact-box">
-          <a href="mailto:your@email.com">aleksandrtarasov@gmail.com</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">@alexandertrsv</a>
-        </div>
+      <div class="reveal" style="position:relative;">
+        <div style="position:absolute;left:-28px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--color-accent-1);box-shadow:0 0 0 4px rgba(12,45,82,0.15);"></div>
+        <div class="text-xs text-text-muted uppercase mb-1">2025 — 2026 · Энтех ОМ / АПХ «Зелёная Долина»</div>
+        <div class="font-display text-lg font-bold text-text mb-1">Руководитель проектов — стратегия цифровизации холдинга</div>
+        <p class="text-sm text-text-secondary">Координация стратегии до 2032 года, портфель 70+ инициатив, команда 20 человек.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</div>
 
-  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
-  <script src="script.js"></script>
+<!-- SLIDE 7: VALUE / CLOSING -->
+<div class="slide slide-7" data-slide="7" style="background:linear-gradient(160deg,#0c1b2e 0%,#0c2d52 60%,#13345e 100%);">
+  <div class="gradient-mesh">
+    <div class="blob" style="width:460px;height:460px;top:-110px;left:-100px;background:#b08d36;opacity:.16;"></div>
+    <div class="blob" style="width:300px;height:300px;bottom:-90px;right:-70px;background:#6f93c4;opacity:.14;"></div>
+    <div class="blob" style="width:200px;height:200px;top:35%;right:10%;background:#b08d36;opacity:.10;"></div>
+  </div>
+  <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1;"></canvas>
+  <div class="content text-center">
+    <p class="reveal text-xs uppercase tracking-[6px] text-[#9fb0c4] mb-4">Ценность для компании</p>
+    <h2 class="reveal font-display text-[clamp(2rem,4.2vw,2.9rem)] font-bold text-[#f7f6f3] mb-8">От стратегии до работающего решения</h2>
+    <div class="grid grid-cols-3 gap-6 text-left">
+      <div class="reveal" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;">
+        <div class="text-[#b08d36] font-bold mb-2">Стратегический уровень</div>
+        <p class="text-[#dbe3ee] text-sm">Портфельное управление, дорожные карты, материалы для совета директоров.</p>
+      </div>
+      <div class="reveal" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;">
+        <div class="text-[#b08d36] font-bold mb-2">Операционная реализация</div>
+        <p class="text-[#dbe3ee] text-sm">Управление командами, бюджетами и рисками на всех этапах проекта.</p>
+      </div>
+      <div class="reveal" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;">
+        <div class="text-[#b08d36] font-bold mb-2">Измеримый результат</div>
+        <p class="text-[#dbe3ee] text-sm">Запущенные продукты, экономия бюджета, охват сотен пользователей.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="nav-controls">
+  <button class="nav-btn" onclick="changeSlide(-1)">&#8249;</button>
+  <div class="slide-dots" id="dots"></div>
+  <button class="nav-btn" onclick="changeSlide(1)">&#8250;</button>
+  <span class="slide-counter" id="counter">1 / 7</span>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
