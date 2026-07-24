@@ -16,6 +16,7 @@ h1,h2,h3,h4{margin:0 0 1rem;line-height:1.15;text-wrap:balance;font-family:var(-
 .display{font-size:var(--text-2xl);font-weight:900;letter-spacing:-0.01em;}
 .display-sm{font-size:var(--text-xl);}
 h2{font-size:var(--text-xl);font-weight:700;}h4{font-size:var(--text-lg);font-weight:700;}
+.text-center .subtitle{display:inline-block;padding-right:0.03em;}
 .subtitle{font-size:clamp(1.1rem,1rem + 1vw,1.4rem);color:var(--accent-2);letter-spacing:0.03em;margin-bottom:2.5rem;}
 .text-center{text-align:center;}
 .stat-row{display:flex;justify-content:center;gap:clamp(1.5rem,5vw,3rem);flex-wrap:wrap;}
