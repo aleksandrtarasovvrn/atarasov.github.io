@@ -3,128 +3,229 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0c2d52" />
-  <title>Тарасов — Портфолио</title>
-  <meta name="description" content="Портфолио системного руководителя ИТ-проектов: опыт, компетенции, достижения и контакты." />
+  <meta name="theme-color" content="#0c1b2e" />
+  <title>Тарасов — IT Project Manager</title>
+  <meta name="description" content="Портфолио системного руководителя ИТ-проектов: опыт, кейсы, экспертиза и карьерный путь." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <div class="brand">TT</div>
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#about">Обо мне</a>
-        <a href="#strengths">Сильные стороны</a>
-        <a href="#expertise">Экспертиза</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
-    </div>
-  </header>
+  <nav class="dots-nav" aria-label="Навигация по разделам">
+    <a href="#s1" class="dot" aria-label="Титул"></a>
+    <a href="#s2" class="dot" aria-label="Профиль"></a>
+    <a href="#s3" class="dot" aria-label="Стратегия"></a>
+    <a href="#s4" class="dot" aria-label="Mobile"></a>
+    <a href="#s5" class="dot" aria-label="SAP и данные"></a>
+    <a href="#s6" class="dot" aria-label="Карьера"></a>
+    <a href="#s7" class="dot" aria-label="Ценность"></a>
+  </nav>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">Профессиональный профиль</p>
-        <h1>Системный руководитель ИТ‑проектов</h1>
-        <p class="lead">Управление полным циклом: требования, roadmap, бюджет и риски — от инициации до запуска и развития решений.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contacts">Связаться</a>
-          <a class="btn btn-secondary" href="#strengths">Смотреть опыт</a>
-        </div>
-      </div>
-      <aside class="hero-card" aria-label="Краткое резюме">
-        <div class="stat">
-          <strong>ERP, SAP, BI</strong>
-          <span>Крупные корпоративные контуры</span>
-        </div>
-        <div class="stat">
-          <strong>Business + IT</strong>
-          <span>Координация стейкхолдеров</span>
-        </div>
-        <div class="stat">
-          <strong>Delivery</strong>
-          <span>Запуск и развитие цифровых решений</span>
-        </div>
-      </aside>
-    </div>
-  </section>
+  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
 
   <main id="main">
-    <section class="section" id="about">
-      <div class="container grid-two">
-        <div class="content-block">
-          <h2>Обо мне</h2>
-          <p>Координирую бизнес, ИТ, архитектуру, аналитику, поддержку и подрядчиков как единую команду результата.</p>
-          <p>Работаю на стыке управления, системного мышления и корпоративной цифровизации.</p>
+
+    <!-- SLIDE 1 — TITLE -->
+    <section class="slide slide-dark" id="s1">
+      <div class="content text-center">
+        <p class="eyebrow">Профессиональный профиль</p>
+        <h1 class="display">Тарасов</h1>
+        <p class="subtitle">IT Project Manager</p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="stat-num accent">7+</div>
+            <div class="stat-label">лет в ИТ-проектах</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">70+</div>
+            <div class="stat-label">реализованных инициатив</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">600+</div>
+            <div class="stat-label">специалистов в командах</div>
+          </div>
         </div>
-        <div class="card content-block">
-          <h3>Фокус работы</h3>
-          <ul>
-            <li>Управление программами и проектами</li>
-            <li>Сроки, бюджет, риски и roadmap</li>
-            <li>Коммуникация бизнеса и ИТ</li>
-            <li>Внедрение и развитие решений</li>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 — PROFILE -->
+    <section class="slide" id="s2">
+      <div class="content">
+        <p class="kicker">Профессиональный профиль</p>
+        <h2>Системный руководитель ИТ‑проектов</h2>
+        <div class="grid-3">
+          <article class="kpi-card">
+            <div class="kpi-icon">01</div>
+            <h4>Управление полным циклом</h4>
+            <p>Требования, roadmap, бюджет, риски — от инициации до запуска и развития решений.</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-icon">02</div>
+            <h4>Кросс-функциональная координация</h4>
+            <p>Бизнес, ИТ, архитектура, аналитика, поддержка и подрядчики — единая команда результата.</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-icon">03</div>
+            <h4>Enterprise-масштаб</h4>
+            <p>Опыт в ERP, SAP, mobile-продуктах, BI и стратегических программах цифровизации холдинга.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 — STRATEGY CASE -->
+    <section class="slide" id="s3">
+      <div class="content">
+        <p class="kicker">01 · Кейс</p>
+        <h2>Стратегия цифровизации до 2032 года</h2>
+        <div class="grid-2">
+          <div>
+            <ul class="check-list">
+              <li>Разработка программы цифровизации горизонтом 20 лет</li>
+              <li>Координация направлений ERP, mobile, BI и IoT</li>
+              <li>Согласование инициатив с бизнес-стратегией холдинга</li>
+            </ul>
+            <div class="metric-row">
+              <div>
+                <div class="metric-num">70+</div>
+                <div class="metric-label">инициатив</div>
+              </div>
+              <div>
+                <div class="metric-num">5</div>
+                <div class="metric-label">направлений</div>
+              </div>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <p class="card-label">Распределение инициатив по направлениям</p>
+            <div class="bars">
+              <div class="bar-row"><span class="bar-name">BI</span><div class="bar-track"><div class="bar-fill" data-w="85"></div></div><span class="bar-val">17</span></div>
+              <div class="bar-row"><span class="bar-name">ERP</span><div class="bar-track"><div class="bar-fill" data-w="70"></div></div><span class="bar-val">14</span></div>
+              <div class="bar-row"><span class="bar-name">IoT</span><div class="bar-track"><div class="bar-fill" data-w="95"></div></div><span class="bar-val">19</span></div>
+              <div class="bar-row"><span class="bar-name">AI</span><div class="bar-track"><div class="bar-fill" data-w="55"></div></div><span class="bar-val">11</span></div>
+              <div class="bar-row"><span class="bar-name">Прочее</span><div class="bar-track"><div class="bar-fill" data-w="45"></div></div><span class="bar-val">9</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 — MOBILE CASE -->
+    <section class="slide" id="s4">
+      <div class="content">
+        <p class="kicker">02 · Кейс</p>
+        <h2>Mobile-продукт для полевых сотрудников</h2>
+        <div class="grid-4">
+          <div class="kpi-card text-center">
+            <div class="stat-num">5</div>
+            <div class="stat-label">команд</div>
+          </div>
+          <div class="kpi-card text-center">
+            <div class="stat-num">12</div>
+            <div class="stat-label">спринтов</div>
+          </div>
+          <div class="kpi-card text-center">
+            <div class="stat-num">600+</div>
+            <div class="stat-label">пользователей</div>
+          </div>
+          <div class="kpi-card text-center">
+            <div class="stat-num">20</div>
+            <div class="stat-label">интеграций</div>
+          </div>
+        </div>
+        <ul class="check-list grid-list">
+          <li>Управление полным жизненным циклом продукта: backlog, roadmap, релизы</li>
+          <li>Синхронизация мобильной команды с бизнес-заказчиком и ИТ-архитектурой</li>
+          <li>Сокращение цикла релиза более чем в 1.5 раза</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 — SAP & DATA CASE -->
+    <section class="slide" id="s5">
+      <div class="content">
+        <p class="kicker">03 · Кейс</p>
+        <h2>SAP, геоданные и интеграции</h2>
+        <div class="grid-2 items-center">
+          <div class="donut-block">
+            <svg width="150" height="150" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(12,45,82,0.08)" stroke-width="10" />
+              <circle class="donut-ring" data-percent="75" cx="50" cy="50" r="40" fill="none" stroke-width="10" transform="rotate(-90 50 50)" />
+              <text x="50" y="55" text-anchor="middle" font-size="18" font-weight="700">75%</text>
+            </svg>
+            <div>
+              <div class="card-label">Автоматизация процессов</div>
+              <div class="muted-text">Рост доли автоматизированных операций</div>
+            </div>
+          </div>
+          <ul class="check-list">
+            <li>Внедрение и сопровождение SAP REFX, FIAA, поддержка UAT</li>
+            <li>Интеграция SAP с ArcGIS для работы с геоданными</li>
+            <li>Обработка более 700 объектов инфраструктуры</li>
+            <li>Настройка сквозного data lineage для BI-отчётности</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="strengths">
-      <div class="container">
-        <h2>Сильные стороны</h2>
-        <div class="cards cards-3">
-          <article class="card content-block">
-            <h3>Полный цикл</h3>
-            <p>От инициации и требований до внедрения, сопровождения и развития продукта.</p>
-          </article>
-          <article class="card content-block">
-            <h3>Enterprise‑масштаб</h3>
-            <p>Опыт работы с крупными системами, интеграциями и корпоративными процессами.</p>
-          </article>
-          <article class="card content-block">
-            <h3>Кросс‑функциональность</h3>
-            <p>Объединение заказчиков, разработки, аналитики, архитектуры и подрядчиков.</p>
-          </article>
+    <!-- SLIDE 6 — CAREER TIMELINE -->
+    <section class="slide" id="s6">
+      <div class="content">
+        <p class="kicker">Карьерный путь</p>
+        <h2>От SAP-специалиста до руководителя программ</h2>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-item">
+            <span class="timeline-dot dot-gold"></span>
+            <div class="timeline-year">2019 — 2023</div>
+            <h4>SAP-специалист</h4>
+            <p>Внедрение и поддержка SAP-модулей, интеграция с ArcGIS, работа с геоданными.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot dot-gold"></span>
+            <div class="timeline-year">2024 — 2025</div>
+            <h4>Руководитель ИТ-проектов</h4>
+            <p>Управление 5 командами, запуск мобильного продукта на 20 интеграций.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot dot-blue"></span>
+            <div class="timeline-year">2025 — настоящее время</div>
+            <h4>Системный руководитель программ</h4>
+            <p>Формирование стратегии цифровизации до 2032 года, 70 инициатив, 20 лет горизонта планирования.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="expertise">
-      <div class="container">
-        <h2>Экспертиза</h2>
-        <div class="tags">
-          <span>ERP</span>
-          <span>SAP</span>
-          <span>Mobile</span>
-          <span>BI</span>
-          <span>Digital transformation</span>
-          <span>IT management</span>
-          <span>Business analysis</span>
-          <span>Enterprise systems</span>
+    <!-- SLIDE 7 — VALUE CLOSING -->
+    <section class="slide slide-dark" id="s7">
+      <div class="content text-center">
+        <p class="eyebrow">Ценность для бизнеса</p>
+        <h2 class="display-sm">Что я приношу в проекты и команды</h2>
+        <div class="grid-3 value-grid">
+          <div class="value-card">
+            <div class="value-title">Прозрачность</div>
+            <p>Понятный roadmap, контроль сроков, бюджета и рисков на каждом этапе.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Скорость</div>
+            <p>Сокращение циклов релиза и быстрая синхронизация команд и стейкхолдеров.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Масштаб</div>
+            <p>Опыт enterprise-программ в ERP, SAP, mobile и BI для крупного холдинга.</p>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:your@email.com">Написать мне</a>
+          <a class="btn btn-secondary" href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">Telegram</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="contacts">
-      <div class="container grid-two">
-        <div class="content-block">
-          <h2>Контакты</h2>
-          <p>Замени заглушки на свои реальные контакты перед публикацией на GitHub Pages.</p>
-        </div>
-        <div class="card content-block contact-list">
-          <a href="mailto:your@email.com">your@email.com</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">Telegram</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn / CV</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <script src="script.js"></script>
